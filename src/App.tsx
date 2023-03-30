@@ -1,8 +1,11 @@
+import { BrowserRouter } from "react-router-dom";
+import { AppRoutes } from "./routes";
 
 export const App = () => {
   return (
-    <div className="App">
-      Teste
-    </div>
+    /* fornece o contexto pro react router dom funcionar corretamente */
+    <BrowserRouter> 
+      <AppRoutes />
+    </BrowserRouter>
   );
 }
